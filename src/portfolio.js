@@ -5,7 +5,7 @@ const header = {
 
 const about = {
   name: 'Usama Hassan',
-  role: 'Game Developer',
+  role: 'Unity Game Developer | Multiplayer & XR',
   picture: 'https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png',
 
   description:
@@ -197,6 +197,22 @@ const projects = [
       'https://play.google.com/store/apps/details?id=com.SynergyGames.BashingBalls&pli=1',
     video: 'BallBash.mp4',
     image: '/project-images/BallBash.PNG',
+  },
+  {
+    name: 'Ophelia',
+    description:
+      'A first-person mystery puzzle game focused on exploration, environmental storytelling, and clue-based progression. Set within a dark, castle-like environment, players investigate their surroundings, uncover hidden clues, and solve puzzles to advance through interconnected levels. Features an inventory system for collecting and reviewing narrative items such as books and medieval-style scrolls.',
+    stack: [
+      'Unity',
+      'C#',
+      'Puzzle Design',
+      'Inventory Systems',
+      'Level Design',
+    ],
+    sourceCode: '',
+    livePreview: '',
+    video: 'Ophelia.mp4',
+    image: '/project-images/Ophelia.PNG',
   },
 ]
 
