@@ -6,31 +6,35 @@ import './About.css'
 const About = () => {
   const { name, role, description, resume, social, picture } = about
 
+  // compute image src safely
+  let imageSrc = ''
+  if (picture) {
+    if (picture.startsWith('http')) {
+      imageSrc = picture
+    } else if (picture.startsWith('/')) {
+      imageSrc = `${process.env.PUBLIC_URL}${picture}`
+    } else {
+      imageSrc = `${process.env.PUBLIC_URL}/images/${picture}`
+    }
+  }
+
   return (
     <div className='about center'>
       <div className='about__header'>
         {picture && (
-          <img
-            src={
-              picture.startsWith('http')
-                ? picture
-                : `${process.env.PUBLIC_URL}/images/${picture}`
-            }
-            alt={name}
-            className='about__picture'
-          />
+          <img src={imageSrc} alt={name} className='about__picture' />
         )}
 
-    <div className='about__intro'>
-      {name && (
-        <h1>
-          <span className='about__name'>{name}.</span>
-        </h1>
-      )}
+        <div className='about__intro'>
+          {name && (
+            <h1>
+              <span className='about__name'>{name}.</span>
+            </h1>
+          )}
 
-      {role && <h2 className='about__role'>{role}.</h2>}
-      <p className='about__desc'>{description && description}</p>
-      </div>
+          {role && <h2 className='about__role'>{role}.</h2>}
+          <p className='about__desc'>{description}</p>
+        </div>
       </div>
 
       <div className='about__contact center'>
