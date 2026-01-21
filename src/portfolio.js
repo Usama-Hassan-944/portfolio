@@ -64,13 +64,21 @@ const projects = [
     image: '/project-images/Animalia.PNG',
   },
   {
-    name: 'Project 3',
+    name: 'Thunder Horse Racing',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['SASS', 'TypeScript', 'React'],
-    sourceCode: 'https://github.com',
-    livePreview: '',
+      'Multiplayer mobile horse racing with breeding, campaign, competitive multiplayer, and training modes. Features persistent player data on a remote backend, real-time events, championships, and progression for horse upgrades/customization. Work focused on core gameplay systems, client integration with AWS-backed services, game state management, and UI/UX for online features.',
+    stack: [
+      'Unity',
+      'C#',
+      'Photon Fusion',
+      'Remote Persistence',
+      'Progression Systems',
+    ],
+    sourceCode: '',
+    livePreview:
+      'https://play.google.com/store/apps/details?id=com.multiplayer.thunder.horse.racing&hl=en',
     video: '',
+    image: '/project-images/HorseRacing.png',
   },
 ]
 
