@@ -71,6 +71,8 @@ const projects = [
       'Unity',
       'C#',
       'Photon Fusion',
+      'Live Realtime Events',
+      'Live Championships',
       'Remote Persistence',
       'Progression Systems',
     ],
@@ -79,6 +81,28 @@ const projects = [
       'https://play.google.com/store/apps/details?id=com.multiplayer.thunder.horse.racing&hl=en',
     video: '',
     image: '/project-images/HorseRacing.png',
+  },
+  // --- Placeholder samples to preview layout ---
+  {
+    name: 'Emergency Ops: Drive to Rescue',
+    description:
+      'A multi-phase simulation combining shop management (inventory, shelf stocking, autonomous customer AI) with mission-based emergency operations. Players prepare resources, then deploy specialized vehicles (fire truck, ambulance, etc.) to resolve dynamic rescue missions. Built with scalable, data-driven architecture and structured AI workflows.',
+    stack: [
+      'Unity',
+      'C#',
+      'Simulation Systems Design',
+      'AI Behavior Systems',
+      'Command & Queue-Based Architectures',
+      'Data-Driven Design (JSON)',
+      'Vehicle Control Systems',
+      'Design Patterns',
+      'iOS Deployment',
+    ],
+    sourceCode: '',
+    livePreview:
+      'https://apps.apple.com/uy/app/emergency-ops-drive-to-rescue/id6748608256',
+    video: '',
+    image: '/project-images/Emergency_Ops.png',
   },
 ]
 
