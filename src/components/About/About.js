@@ -14,8 +14,6 @@ const About = () => {
             src={
               picture.startsWith('http')
                 ? picture
-                : picture.startsWith('/')
-                ? `${process.env.PUBLIC_URL}${picture}`
                 : `${process.env.PUBLIC_URL}/images/${picture}`
             }
             alt={name}
@@ -39,7 +37,7 @@ const About = () => {
         {resume && (
           <a href={resume}>
             <span type='button' className='btn btn--outline'>
-              View Resume
+              Resume
             </span>
           </a>
         )}
