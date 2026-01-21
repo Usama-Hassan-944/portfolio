@@ -96,13 +96,107 @@ const projects = [
       'Data-Driven Design (JSON)',
       'Vehicle Control Systems',
       'Design Patterns',
-      'iOS Deployment',
     ],
     sourceCode: '',
     livePreview:
       'https://apps.apple.com/uy/app/emergency-ops-drive-to-rescue/id6748608256',
     video: '',
     image: '/project-images/Emergency_Ops.png',
+  },
+  {
+    name: 'Skid Rush - Car Race',
+    description:
+      'A fast-paced endless racing game inspired by double-drift mechanics, expanded with multiple modes including One Lane, Two Lane, Time Bomb, Speed Test, and AI Multiplayer. Focuses on responsive driving, adaptive AI opponents, and runtime procedural generation for obstacles, power-ups, and road segments.',
+    stack: [
+      'Unity',
+      'C#',
+      'Adaptive AI Systems',
+      'Procedural Content Generation',
+      'Runtime Level Generation',
+      'Weighted Spawn Algorithms',
+    ],
+    sourceCode: '',
+    livePreview:
+      'https://apps.apple.com/us/app/skid-rush-car-race/id6748746985',
+    video: '',
+    image: '/project-images/SkidRush.png',
+  },
+  {
+    name: 'Can You Retire?',
+    description:
+      'A multiplayer WebGL board game inspired by classic turn-based board games, supporting up to six players per session. Features card-based mechanics, real-time multiplayer gameplay, and an integrated chat room. Players join private rooms using invitation codes shared via email, with persistent player and session data stored remotely. Required significant customization to adapt Firebase authentication, data storage, and role-based access systems for WebGL platform limitations.',
+    stack: [
+      'Unity',
+      'C#',
+      'WebGL Deployment',
+      'Photon PUN2',
+      'Turn-Based Multiplayer Systems',
+      'Custom Firebase Integration',
+      'Role-Based Authentication (Admin / Player)',
+      'Real-Time Chat Systems',
+      'Room & Session Management',
+    ],
+    sourceCode: '',
+    livePreview: '',
+    video: 'CanYouRetire.mp4',
+    image: '/project-images/CanYouRetire.PNG',
+  },
+  {
+    name: 'Texas Holdem',
+    description:
+      'A multiplayer mobile poker game supporting up to six players per table with real-time synchronized gameplay. Features multiple room configurations with varying buy-in values and gameplay modes, persistent player data, authentication, and social features. Implements turn-based betting logic, server-synchronized game states, and secure session management for fair and consistent gameplay across clients.',
+    stack: [
+      'Unity',
+      'C#',
+      'Photon PUN2',
+      'Turn-Based Game Logic',
+      'Room & Matchmaking Systems',
+      'Firebase (Auth & Database)',
+      'Social Logins (Google, Facebook)',
+      'In-Game Chat & Voice Systems',
+    ],
+    sourceCode: '',
+    livePreview: '',
+    video: 'TexasHoldem.mp4',
+    image: '/project-images/TexasHoldem.PNG',
+  },
+  {
+    name: 'Maze',
+    description:
+      'A 3D casual game where players navigate progressively challenging maze environments while avoiding multiple AI-controlled enemies with distinct behavior patterns. Features proximity-based chaser enemies and radar-based sentry enemies using line-of-sight detection, plus a customized physics-based character controller built on Puppet Master for dynamic, physics-driven interactions.',
+    stack: [
+      'Unity',
+      'C#',
+      'AI Behavior Systems',
+      'NavMesh Navigation',
+      'State Machines',
+      'Puppet Master (Customized)',
+      'Power-Up Systems',
+      '3D Level Design',
+    ],
+    sourceCode: '',
+    livePreview: '',
+    video: 'Maze.mp4',
+    image: '/project-images/Maze.PNG',
+  },
+  {
+    name: 'Ball Bash',
+    description:
+      'A hyper-casual arcade game where players guide a continuous flow of physics-driven balls through dynamic, obstacle-filled paths to the goal. Players draw runtime meshes to block, redirect, or open routes, affecting how many balls reach the end. Features varied layouts (bumps, cut sections, gaps, jump ramps) and a performance-based reward/progression loop.',
+    stack: [
+      'Unity',
+      'C#',
+      'Hyper-Casual Game Design',
+      'Physics-Based Gameplay',
+      'Runtime Mesh Generation',
+      'Reward & Progression Systems',
+      'Touch Input Systems',
+    ],
+    sourceCode: '',
+    livePreview:
+      'https://play.google.com/store/apps/details?id=com.SynergyGames.BashingBalls&pli=1',
+    video: 'BallBash.mp4',
+    image: '/project-images/BallBash.PNG',
   },
 ]
 
