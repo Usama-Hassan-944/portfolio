@@ -42,14 +42,26 @@ const projects = [
     image: '/project-images/Nexus_Arcade.png',
   },
   {
-    name: 'Project 2',
+    name: 'Animalia',
     description:
-      'Amet asperiores et impedit aliquam consectetur? Voluptates sed a nulla ipsa officia et esse aliquam',
-    stack: ['SASS', 'TypeScript', 'React'],
-    sourceCode: 'https://github.com',
-    livePreview: '',
-    video: '',
-    image: 'https://github.githubassets.com/assets/GitHub-Logo-ee398b662d42.png',
+      'A multiplayer PC card game focused on scalable architecture, real-time networking, and live-service features. Built on a customized CCG framework with reactive patterns and dependency injection, integrating Photon Fusion for multiplayer, Unity Multiplay for server orchestration, and PlayFab-backed services for player data, progression, and online play.',
+    stack: [
+      'Unity',
+      'C#',
+      'Zenject',
+      'UniRx',
+      'Custom CCG Framework',
+      'Photon Fusion',
+      'Unity Multiplay',
+      'PlayFab',
+      'SQL',
+      'Addressables',
+    ],
+    sourceCode: '',
+    livePreview: 'https://animalia.games/',
+    video: 'Animalia.mp4',
+    // NOTE: your file is `Animalia.PNG` (uppercase extension) in public/project-images
+    image: '/project-images/Animalia.PNG',
   },
   {
     name: 'Project 3',
