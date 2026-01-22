@@ -21,7 +21,7 @@ const projects = [
   {
     name: 'Nexus Arcade',
     description:
-      'A mixed reality arcade simulation for Meta Quest blending virtual gameplay with real-world spatial interaction. Includes Boxing, Shooting, Racing, and Ten Pin Bowling with single-player, co-located multiplayer, and online multiplayer. Built around shared spatial experiences and Meta platform social integrations.',
+      'Co-Developer of this mixed reality arcade simulation for Meta Quest blending virtual gameplay with real-world spatial interaction. Includes Boxing, Shooting, Racing, and Ten Pin Bowling with single-player, co-located multiplayer, and online multiplayer. Built around shared spatial experiences and Meta platform social integrations.',
     stack: [
       'Unity',
       'C#',
@@ -79,7 +79,6 @@ const projects = [
     video: '',
     image: '/project-images/HorseRacing.png',
   },
-  // --- Placeholder samples to preview layout ---
   {
     name: 'Emergency Ops: Drive to Rescue',
     description:
@@ -121,7 +120,7 @@ const projects = [
   {
     name: 'Can You Retire?',
     description:
-      'A multiplayer WebGL board game inspired by classic turn-based board games, supporting up to six players per session. Features card-based mechanics, real-time multiplayer gameplay, and an integrated chat room. Players join private rooms using invitation codes shared via email, with persistent player and session data stored remotely. Required significant customization to adapt Firebase authentication, data storage, and role-based access systems for WebGL platform limitations.',
+      'Co-Developed this multiplayer WebGL board game inspired by classic turn-based board games, supporting up to six players per session. Features card-based mechanics, real-time multiplayer gameplay, and an integrated chat room. Players join private rooms using invitation codes shared via email, with persistent player and session data stored remotely. Required significant customization to adapt Firebase authentication, data storage, and role-based access systems for WebGL platform limitations.',
     stack: [
       'Unity',
       'C#',
@@ -141,7 +140,7 @@ const projects = [
   {
     name: 'Texas Holdem',
     description:
-      'A multiplayer mobile poker game supporting up to six players per table with real-time synchronized gameplay. Features multiple room configurations with varying buy-in values and gameplay modes, persistent player data, authentication, and social features. Implements turn-based betting logic, server-synchronized game states, and secure session management for fair and consistent gameplay across clients.',
+      'Co-Developed this multiplayer mobile poker game supporting up to six players per table with real-time synchronized gameplay. Features multiple room configurations with varying buy-in values and gameplay modes, persistent player data, authentication, and social features. Implements turn-based betting logic, server-synchronized game states, and secure session management for fair and consistent gameplay across clients.',
     stack: [
       'Unity',
       'C#',
@@ -179,7 +178,7 @@ const projects = [
   {
     name: 'Ball Bash',
     description:
-      'A hyper-casual arcade game where players guide a continuous flow of physics-driven balls through dynamic, obstacle-filled paths to the goal. Players draw runtime meshes to block, redirect, or open routes, affecting how many balls reach the end. Features varied layouts (bumps, cut sections, gaps, jump ramps) and a performance-based reward/progression loop.',
+      'Co-Developed a hyper-casual arcade game where players guide a continuous flow of physics-driven balls through dynamic, obstacle-filled paths to the goal. Players draw runtime meshes to block, redirect, or open routes, affecting how many balls reach the end. Features varied layouts (bumps, cut sections, gaps, jump ramps) and a performance-based reward/progression loop.',
     stack: [
       'Unity',
       'C#',
@@ -198,7 +197,7 @@ const projects = [
   {
     name: 'Ophelia',
     description:
-      'A first-person mystery puzzle game focused on exploration, environmental storytelling, and clue-based progression. Set within a dark, castle-like environment, players investigate their surroundings, uncover hidden clues, and solve puzzles to advance through interconnected levels. Features an inventory system for collecting and reviewing narrative items such as books and medieval-style scrolls.',
+      'Co-Developed a first-person mystery puzzle game focused on exploration, environmental storytelling, and clue-based progression. Set within a dark, castle-like environment, players investigate their surroundings, uncover hidden clues, and solve puzzles to advance through interconnected levels. Features an inventory system for collecting and reviewing narrative items such as books and medieval-style scrolls.',
     stack: [
       'Unity',
       'C#',
