@@ -5,11 +5,11 @@ const header = {
 
 const about = {
   name: 'Usama Hassan',
-  role: 'Unity Game Developer | Multiplayer & XR',
+  role: 'Software Engineer',
   picture: '/profile-images/1.png',
 
   description:
-    'I’m a game developer with over 5 years of professional experience building gameplay systems and immersive experiences across multiple platforms. I primarily work with Unity and C#, and have contributed to both shipped and prototype projects ranging from multiplayer and co-op games to Web3 titles, mixed reality experiences, casual and hypercasual games. I enjoy tackling technical challenges, designing clean and scalable systems, and turning ideas into engaging, player-focused experiences.',
+      'I’m a Software Engineer with over 5 years of professional experience building games, applications, and data-driven systems across multiple platforms. My core background is in Unity and C#, with experience spanning multiplayer and mixed reality products, business applications, databases, third-party integrations, and analytics. I enjoy solving complex technical problems, working with data to understand product performance, and designing clean, scalable systems that turn real-world requirements into reliable software solutions.',
   resume: '/resume/Usama_Hassan_Resume_2.pdf',
   social: {
     linkedin: 'https://www.linkedin.com/in/usama-hassan-505b3a1a4/',
@@ -39,6 +39,28 @@ const projects = [
     image: '/project-images/Nexus_Arcade.png',
   },
   {
+  name: 'StoreFlow',
+
+  description:
+    'A retail operations and inventory management application designed to manage products and SKUs, suppliers, purchase orders, stock receiving and movement, sales, and inventory reporting. Includes structured inventory workflows and data import/export capabilities for operational analysis and reconciliation.',
+
+  stack: [
+    'C#',
+    '.NET',
+    'SQL Server',
+    'Microsoft Excel',
+    'Inventory Management',
+    'Order Management',
+    'Data Import / Export',
+    'Reporting',
+  ],
+
+  sourceCode: '',
+  livePreview: 'https://whms-lte-fs.csharpasp.net/',
+  video: '',
+  image: '/project-images/Storeflow.png',
+},
+  {
     name: 'Animalia',
     description:
       'A multiplayer PC card game focused on scalable architecture, real-time networking, and live-service features. Built on a customized CCG framework with reactive patterns and dependency injection, integrating Photon Fusion for multiplayer, Unity Multiplay for server orchestration, and PlayFab-backed services for player data, progression, and online play.',
@@ -57,27 +79,7 @@ const projects = [
     sourceCode: '',
     livePreview: 'https://animalia.games/',
     video: 'Animalia.mp4',
-    // NOTE: your file is `Animalia.PNG` (uppercase extension) in public/project-images
     image: '/project-images/Animalia.PNG',
-  },
-  {
-    name: 'Thunder Horse Racing',
-    description:
-      'Multiplayer mobile horse racing with breeding, campaign, competitive multiplayer, and training modes. Features persistent player data on a remote backend, real-time events, championships, and progression for horse upgrades/customization. Work focused on core gameplay systems, client integration with AWS-backed services, game state management, and UI/UX for online features.',
-    stack: [
-      'Unity',
-      'C#',
-      'Photon Fusion',
-      'Live Realtime Events',
-      'Live Championships',
-      'Remote Persistence',
-      'Progression Systems',
-    ],
-    sourceCode: '',
-    livePreview:
-      'https://play.google.com/store/apps/details?id=com.multiplayer.thunder.horse.racing&hl=en',
-    video: '',
-    image: '/project-images/HorseRacing.png',
   },
   {
     name: 'Emergency Ops: Drive to Rescue',
@@ -99,6 +101,48 @@ const projects = [
     video: '',
     image: '/project-images/Emergency_Ops.png',
   },
+  {
+  name: 'Inventory Management System',
+
+  description:
+    'Developed a desktop inventory and order management application for retail operations, supporting product and inventory management, suppliers and customers, purchase and sales workflows, invoicing, and operational reporting. Features stock tracking, transaction management, multi-user access, and structured relational data storage for day-to-day retail operations.',
+
+  stack: [
+    'C#',
+    '.NET Framework',
+    'WPF',
+    'MySQL',
+    'Inventory Management',
+    'Product & Supplier Management',
+    'Purchase & Sales Workflows',
+    'POS Systems',
+    'Reporting',
+  ],
+  sourceCode: '',
+  livePreview: '',
+  video: '',
+  image: '/project-images/POS.png',
+},
+  {
+    name: 'Thunder Horse Racing',
+    description:
+      'Multiplayer mobile horse racing with breeding, campaign, competitive multiplayer, and training modes. Features persistent player data on a remote backend, real-time events, championships, and progression for horse upgrades/customization. Work focused on core gameplay systems, client integration with AWS-backed services, game state management, and UI/UX for online features.',
+    stack: [
+      'Unity',
+      'C#',
+      'Photon Fusion',
+      'Live Realtime Events',
+      'Live Championships',
+      'Remote Persistence',
+      'Progression Systems',
+    ],
+    sourceCode: '',
+    livePreview:
+      'https://play.google.com/store/apps/details?id=com.multiplayer.thunder.horse.racing&hl=en',
+    video: '',
+    image: '/project-images/HorseRacing.png',
+  },
+
   {
     name: 'Skid Rush - Car Race',
     description:
@@ -213,25 +257,28 @@ const projects = [
 ]
 
 const skills = [
-  'Unity',
   'C#',
-  'C++',
-  'Python',
-  'JavaScript',
+  '.NET',
+  'Unity',
   'SQL',
+  'MySQL',
+  'Microsoft Excel',
+  'Python',
+  'C++',
+  'JavaScript',
+  'Firebase',
+  'Firebase Analytics',
+  'Database & API Integration',
+  'REST APIs',
+  'AWS (Backend & Hosting)',
+  'Git',
+  'PlayFab',
+  'Social Platform APIs (Meta, Apple, Google Play)',
   'Photon (Fusion & Pun2)',
   'Netcode for GameObjects',
   'Mixed Reality (MR)',
   'VR/AR Interaction Systems',
-  'Voice/Text Chat Systems',
-  'AWS (Backend & Hosting)',
-  'Custom Backend APIs',
-  'Unity Multiplay',
-  'PlayFab',
-  'Firebase',
-  'Social Platform APIs (Meta, Apple, Google Play)',
-  'Git',
-]
+];
 
 
 const contact = {
