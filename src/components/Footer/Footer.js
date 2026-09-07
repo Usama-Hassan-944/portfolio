@@ -6,7 +6,7 @@ const Footer = () => (
       href='https://github.com/usama-hassan-944/portfolio'
       className='link footer__link'
     >
-      Created By Usama Hassan
+      © {new Date().getFullYear()} Usama Hassan — Game Developer
     </a>
   </footer>
 )

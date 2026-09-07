@@ -1,57 +1,11 @@
-.about {
-  flex-direction: column;
-  margin-top: 3em;
-}
-
-.about__name {
-  color: var(--clr-primary);
-}
-
-.about__role {
-  margin-top: 1.2em;
-}
-
-.about__desc {
-  font-size: 1rem;
-  max-width: 600px;
-}
-
-.about__desc,
-.about__contact {
-  margin-top: 2.4em;
-}
-
-.about .link--icon {
-  margin-right: 0.8em;
-}
-
-.about .btn--outline {
-  margin-right: 1em;
-}
-
-@media (max-width: 600px) {
-  .app .about {
-    align-items: flex-start;
-    margin-top: 2em;
-  }
-}
-
-.about__header {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem; /* space between picture and text */
-  margin-bottom: 1.5rem;
-}
-
-.about__picture {
-  width: 180px;
-  height: 180px;
-  border-radius: 70%;   /* round profile */
-  object-fit: cover;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-}
-
-.about__intro {
-  display: flex;
-  flex-direction: column;
-}
+.about { min-height: calc(100vh - 6.5rem); display: grid; grid-template-columns: minmax(0, 1fr) 310px; align-items: center; gap: clamp(3rem, 7vw, 7rem); padding: 3rem 0 5rem; }
+.about h1 { margin: 1.4rem 0 1.7rem; max-width: 900px; }
+.about h1 em { color: var(--accent); font-style: normal; }
+.about__role { color: var(--heading); font-family: 'Space Grotesk', sans-serif; font-weight: 700; }
+.about__desc { max-width: 760px; margin-top: 1.45rem; font-size: 1.06rem; }
+.about__contact { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem; margin-top: 2rem; }
+.about__portrait { position: relative; align-self: center; aspect-ratio: 4/5; padding: .65rem; border: 1px solid var(--border); border-radius: 150px 150px 24px 24px; background: var(--surface); box-shadow: var(--shadow); }
+.about__portrait img { width: 100%; height: 100%; display: block; object-fit: cover; object-position: center top; border-radius: 145px 145px 18px 18px; filter: saturate(.8); }
+.about__portrait span { position: absolute; right: -1.4rem; bottom: 2.2rem; padding: .55rem .9rem; color: #111713; background: var(--accent); border-radius: 999px; font-family: 'Space Grotesk', sans-serif; font-size: .78rem; font-weight: 700; }
+@media (max-width: 860px) { .about { min-height: auto; grid-template-columns: 1fr; padding-top: 4rem; } .about__portrait { grid-row: 1; width: min(260px, 70vw); justify-self: center; } }
+@media (max-width: 520px) { .about { gap: 2.5rem; } .about__contact { align-items: stretch; } .about__contact .btn { flex: 1 1 145px; } }

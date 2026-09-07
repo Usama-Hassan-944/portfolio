@@ -1,12 +1,14 @@
-import { useEffect, useMemo, useState } from 'react'
-import uniqid from 'uniqid'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import { createPortal } from 'react-dom'
 import GitHubIcon from '@material-ui/icons/GitHub'
 import LaunchIcon from '@material-ui/icons/Launch'
 import OndemandVideoIcon from '@material-ui/icons/OndemandVideo'
 import './ProjectContainer.css'
 
-const ProjectContainer = ({ project }) => {
+const ProjectContainer = ({ project, index }) => {
   const [isVideoOpen, setIsVideoOpen] = useState(false)
+  const videoRef = useRef(null)
+  const closeButtonRef = useRef(null)
 
   const imageSrc = useMemo(() => {
     if (!project.image) return null
@@ -31,17 +33,35 @@ const ProjectContainer = ({ project }) => {
       : `${process.env.PUBLIC_URL}/videos/${project.video}`
   }, [project.video])
 
+  const closeVideo = useCallback(async () => {
+    const video = videoRef.current
+    video?.pause()
+    try {
+      if (document.pictureInPictureElement && document.exitPictureInPicture) await document.exitPictureInPicture()
+      if (document.fullscreenElement && document.exitFullscreen) await document.exitFullscreen()
+    } catch (error) {
+      // The browser may already be leaving a native playback mode.
+    }
+    setIsVideoOpen(false)
+  }, [])
+
   useEffect(() => {
     if (!isVideoOpen) return undefined
+    const previousOverflow = document.body.style.overflow
+    document.body.style.overflow = 'hidden'
+    closeButtonRef.current?.focus()
     const onKeyDown = (e) => {
-      if (e.key === 'Escape') setIsVideoOpen(false)
+      if (e.key === 'Escape') closeVideo()
     }
     window.addEventListener('keydown', onKeyDown)
-    return () => window.removeEventListener('keydown', onKeyDown)
-  }, [isVideoOpen])
+    return () => {
+      window.removeEventListener('keydown', onKeyDown)
+      document.body.style.overflow = previousOverflow
+    }
+  }, [closeVideo, isVideoOpen])
 
   return (
-    <div className='project'>
+    <article className='project'>
       {imageSrc && (
         <img
           src={imageSrc}
@@ -50,14 +70,14 @@ const ProjectContainer = ({ project }) => {
         />
       )}
 
-      <h3>{project.name}</h3>
+      <div className='project__heading'><span>{String(index + 1).padStart(2, '0')}</span><h3>{project.name}</h3></div>
 
       <p className='project__description'>{project.description}</p>
 
       {project.stack && (
         <ul className='project__stack'>
           {project.stack.map((item) => (
-            <li key={uniqid()} className='project__stack-item'>
+            <li key={item} className='project__stack-item'>
               {item}
             </li>
           ))}
@@ -80,12 +100,12 @@ const ProjectContainer = ({ project }) => {
         {project.livePreview && (
           <a
             href={project.livePreview}
-            aria-label='live preview'
-            className='link link--icon'
+            aria-label={`View ${project.name} live`}
+            className='project__action'
             target='_blank'
             rel='noreferrer'
           >
-            <LaunchIcon />
+            <LaunchIcon /> <span>View project</span>
           </a>
         )}
 
@@ -93,34 +113,29 @@ const ProjectContainer = ({ project }) => {
           <button
             type='button'
             onClick={() => setIsVideoOpen(true)}
-            aria-label='video demo'
-            className='link link--icon project__video-btn'
+            aria-label={`Watch ${project.name} video demo`}
+            className='project__action project__video-btn'
           >
-            <OndemandVideoIcon />
+            <OndemandVideoIcon /> <span>Watch demo</span>
           </button>
         )}
       </div>
 
-      {isVideoOpen && videoSrc && (
+      {isVideoOpen && videoSrc && createPortal(
         <div
           className='project__video-overlay'
           role='dialog'
           aria-modal='true'
           aria-label={`${project.name} video demo`}
         >
-          <button
-            type='button'
-            className='project__video-backdrop'
-            aria-label='Close video'
-            onClick={() => setIsVideoOpen(false)}
-          />
-
-          <div className='project__video-modal'>
+          <button type='button' className='project__video-backdrop' aria-label='Close video' onClick={closeVideo} />
+          <div className='project__video-modal' role='document'>
+            <div className='project__video-title'><strong>{project.name}</strong><button ref={closeButtonRef} type='button' onClick={closeVideo} aria-label='Close video'>×</button></div>
             <video
+              ref={videoRef}
               className='project__video'
               controls
               autoPlay
-              onClick={(e) => e.stopPropagation()}
             >
               <source src={videoSrc} />
               {/* Required for eslint jsx-a11y/media-has-caption */}
@@ -134,9 +149,9 @@ const ProjectContainer = ({ project }) => {
               Your browser does not support the video tag.
             </video>
           </div>
-        </div>
+        </div>, document.body
       )}
-    </div>
+    </article>
   )
 }
 

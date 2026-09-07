@@ -5,12 +5,12 @@ const header = {
 
 const about = {
   name: 'Usama Hassan',
-  role: 'Software Engineer',
+  role: 'Unity Game Developer | Multiplayer & XR',
   picture: '/profile-images/1.png',
 
   description:
-      'I’m a Software Engineer with over 5 years of professional experience building games, applications, and data-driven systems across multiple platforms. My core background is in Unity and C#, with experience spanning multiplayer and mixed reality products, business applications, databases, third-party integrations, and analytics. I enjoy solving complex technical problems, working with data to understand product performance, and designing clean, scalable systems that turn real-world requirements into reliable software solutions.',
-  resume: '/resume/Usama_Hassan_Resume_2.pdf',
+    'I’m a game developer with over 5 years of professional experience building gameplay systems and immersive experiences across multiple platforms. I primarily work with Unity and C#, and have contributed to both shipped and prototype projects ranging from multiplayer and co-op games to Web3 titles, mixed reality experiences, casual and hypercasual games. I enjoy tackling technical challenges, designing clean and scalable systems, and turning ideas into engaging, player-focused experiences.',
+  resume: '/resume/Usama Resume.pdf',
   social: {
     linkedin: 'https://www.linkedin.com/in/usama-hassan-505b3a1a4/',
     github: 'https://github.com/Usama-Hassan-944',
@@ -38,28 +38,6 @@ const projects = [
     video: 'Nexus_Arcade.mp4',
     image: '/project-images/Nexus_Arcade.png',
   },
-  {
-  name: 'StoreFlow',
-
-  description:
-    'A retail operations and inventory management application designed to manage products and SKUs, suppliers, purchase orders, stock receiving and movement, sales, and inventory reporting. Includes structured inventory workflows and data import/export capabilities for operational analysis and reconciliation.',
-
-  stack: [
-    'C#',
-    '.NET',
-    'SQL Server',
-    'Microsoft Excel',
-    'Inventory Management',
-    'Order Management',
-    'Data Import / Export',
-    'Reporting',
-  ],
-
-  sourceCode: '',
-  livePreview: 'https://whms-lte-fs.csharpasp.net/',
-  video: '',
-  image: '/project-images/Storeflow.png',
-},
   {
     name: 'Animalia',
     description:
@@ -102,28 +80,6 @@ const projects = [
     image: '/project-images/Emergency_Ops.png',
   },
   {
-  name: 'Inventory Management System',
-
-  description:
-    'Developed a desktop inventory and order management application for retail operations, supporting product and inventory management, suppliers and customers, purchase and sales workflows, invoicing, and operational reporting. Features stock tracking, transaction management, multi-user access, and structured relational data storage for day-to-day retail operations.',
-
-  stack: [
-    'C#',
-    '.NET Framework',
-    'WPF',
-    'MySQL',
-    'Inventory Management',
-    'Product & Supplier Management',
-    'Purchase & Sales Workflows',
-    'POS Systems',
-    'Reporting',
-  ],
-  sourceCode: '',
-  livePreview: '',
-  video: '',
-  image: '/project-images/POS.png',
-},
-  {
     name: 'Thunder Horse Racing',
     description:
       'Multiplayer mobile horse racing with breeding, campaign, competitive multiplayer, and training modes. Features persistent player data on a remote backend, real-time events, championships, and progression for horse upgrades/customization. Work focused on core gameplay systems, client integration with AWS-backed services, game state management, and UI/UX for online features.',
@@ -137,8 +93,7 @@ const projects = [
       'Progression Systems',
     ],
     sourceCode: '',
-    livePreview:
-      'https://play.google.com/store/apps/details?id=com.multiplayer.thunder.horse.racing&hl=en',
+    livePreview: '',
     video: '',
     image: '/project-images/HorseRacing.png',
   },
@@ -233,8 +188,7 @@ const projects = [
       'Touch Input Systems',
     ],
     sourceCode: '',
-    livePreview:
-      'https://play.google.com/store/apps/details?id=com.SynergyGames.BashingBalls&pli=1',
+    livePreview: '',
     video: 'BallBash.mp4',
     image: '/project-images/BallBash.PNG',
   },
@@ -257,28 +211,27 @@ const projects = [
 ]
 
 const skills = [
-  'C#',
-  '.NET',
-  'Unity',
-  'SQL',
-  'MySQL',
-  'Microsoft Excel',
-  'Python',
-  'C++',
-  'JavaScript',
-  'Firebase',
-  'Firebase Analytics',
-  'Database & API Integration',
-  'REST APIs',
-  'AWS (Backend & Hosting)',
-  'Git',
-  'PlayFab',
-  'Social Platform APIs (Meta, Apple, Google Play)',
-  'Photon (Fusion & Pun2)',
-  'Netcode for GameObjects',
-  'Mixed Reality (MR)',
-  'VR/AR Interaction Systems',
-];
+  {
+    title: 'Gameplay & Systems',
+    description: 'Responsive, maintainable systems built around the player experience.',
+    items: ['Gameplay Architecture', 'State Machines', 'AI & NavMesh', 'Physics Systems', 'Procedural Generation', 'Data-Driven Design', 'UI / UX Implementation', 'Design Patterns'],
+  },
+  {
+    title: 'Multiplayer & Online',
+    description: 'Real-time multiplayer, persistent progression, and live game services.',
+    items: ['Photon Fusion', 'Photon PUN 2', 'Netcode for GameObjects', 'Matchmaking & Rooms', 'State Synchronization', 'Voice / Text Chat', 'Unity Multiplay', 'Live Operations'],
+  },
+  {
+    title: 'XR & Platforms',
+    description: 'Immersive and cross-platform experiences from headset to browser.',
+    items: ['Mixed Reality', 'VR / AR Interactions', 'Meta Quest', 'MR Utility Kit', 'Spatial Anchors', 'Shared Spaces', 'PC & Mobile', 'WebGL'],
+  },
+  {
+    title: 'Engineering & Services',
+    description: 'Production tooling and backend integrations that keep games scalable.',
+    items: ['Unity & C#', 'C++', 'Python', 'JavaScript', 'PlayFab', 'Firebase', 'AWS', 'SQL', 'Addressables', 'Zenject & UniRx', 'Git', 'Platform APIs'],
+  },
+]
 
 
 const contact = {
