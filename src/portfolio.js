@@ -17,6 +17,45 @@ const about = {
   },
 }
 
+const experience = [
+  {
+    company: 'Nexus Dev Studio',
+    role: 'Senior Game Developer',
+    location: 'London, England (Remote)',
+    highlights: [
+      'Co-developed Nexus Arcade, a shipped Meta Quest mixed reality arcade experience featuring single-player, co-located, and online multiplayer modes.',
+      'Led development of the Ten Pin Bowling and Shooting modules, contributing core gameplay systems within a shared spatial MR hub.',
+    ],
+  },
+  {
+    company: 'Bleeding Edge Studio',
+    role: 'Senior Multiplayer Game Developer',
+    location: 'Lahore, Pakistan',
+    highlights: [
+      'Co-developed Thunder Horse Racing, a multiplayer mobile game with breeding, campaign, training, competitive racing, and persistent progression systems.',
+      'Built multiplayer and live-service features including real-time events, championships, localization, and scalable data-driven content.',
+    ],
+  },
+  {
+    company: 'Crosshair Technology / RIFT Games',
+    role: 'Game Developer',
+    location: 'Lahore, Pakistan',
+    highlights: [
+      'Co-developed Animalia, a multiplayer CCG-style PC game, contributing gameplay systems, Photon Fusion networking, and scalable architecture.',
+      'Implemented state-driven enemy AI and gameplay logic for Maze, including distinct behavior patterns and dynamic player interactions.',
+    ],
+  },
+  {
+    company: 'Geniteam Solutions',
+    role: 'Software Engineer',
+    location: 'Lahore, Pakistan',
+    highlights: [
+      'Developed Lost Soul District, a multiplayer PC shooter prototype supporting 1v1, 3v3, and 5v5 team-based modes.',
+      'Designed advanced AI for TWET, a multiplayer turn-based strategy game supporting mixed human and AI team compositions.',
+    ],
+  },
+]
+
 const projects = [
   {
     name: 'Nexus Arcade',
@@ -238,4 +277,4 @@ const contact = {
   email: 'usamahassan944@gmail.com',
 }
 
-export { header, about, projects, skills, contact }
+export { header, about, experience, projects, skills, contact }
